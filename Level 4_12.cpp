@@ -11,10 +11,10 @@ int main()
         }
     }
     if(b==a){
-        cout<<"Perfect";
+        cout<<"Mükəmməl";
     }
     else{
-        cout<<"Not";
+        cout<<"Deyil";
     }
     return 0;
 }
