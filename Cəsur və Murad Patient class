@@ -1,0 +1,52 @@
+using System;
+
+public class Patient
+{
+    int id;
+    string fullName;
+    int age;
+    string bloodType;
+
+
+    public static int ÜmumiXeste = 0;
+
+    public Patient(string name, int ages,string blood)
+    {
+        fullName = name;
+        age=ages;
+        bloodType=blood;
+        ÜmumiXeste++;
+        id=ÜmumiXeste;
+    }
+
+    public int GetID(){ return id; }
+    public string GetFullname(){ return fullName;}
+    public int GetAge(){ return age; }
+    public string GetBloodtype(){ return bloodType;}
+
+    
+    public void GetRecord()
+    {
+        Console.WriteLine($"Xeste:{fullName} | Yaş:{age} | Id:{id} | Qan:{bloodType}");
+    }
+    public static void GetTotalAccounts()
+    {
+        Console.WriteLine(ÜmumiXeste);
+    }
+}
+class Program
+{
+    static void Main(string [] args)
+    {
+        Patient p1 = new Patient("Eduardo Mustafayev", 18, "III" );
+        p1.GetRecord();
+        
+        Patient p2 = new Patient("Akif Mustafayev", 17, "III+" );
+        p2.GetRecord();
+        
+        Patient p3 = new Patient("Nelleki Çaynikova ", 18, "I+" );
+        p3.GetRecord();
+        
+        Patient.GetTotalAccounts();
+    }
+}
