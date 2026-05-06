@@ -44,7 +44,7 @@ class Program
         Patient p2 = new Patient("Akif Mustafayev", 17, "III+" );
         p2.GetRecord();
         
-        Patient p3 = new Patient("Nelleki Çaynikova ", 18, "I+" );
+        Patient p3 = new Patient("Nelbeki Çaynikova ", 18, "I+" );
         p3.GetRecord();
         
         Patient.GetTotalAccounts();
